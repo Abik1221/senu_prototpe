@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamor Hair Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Glamor Hair Boutique</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button id="cart-button"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Beauty</h1>
+                <p>Premium hair care, personal care, and cosmetics products for the modern individual.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2>Featured Collections</h2>
+            <div class="featured-categories">
+                <div class="category">
+                    <img src="https://placehold.co/300x300/e8d3e3/333?text=Hair+Care" alt="Hair Care">
+                    <h3>Hair Care</h3>
+                    <a href="#hair-products" class="btn-small">View Collection</a>
+                </div>
+                <div class="category">
+                    <img src="https://placehold.co/300x300/d3e8e3/333?text=Skin+Care" alt="Skin Care">
+                    <h3>Skin Care</h3>
+                    <a href="#skin-products" class="btn-small">View Collection</a>
+                </div>
+                <div class="category">
+                    <img src="https://placehold.co/300x300/e3d3e8/333?text=Cosmetics" alt="Cosmetics">
+                    <h3>Cosmetics</h3>
+                    <a href="#cosmetic-products" class="btn-small">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hair">Hair Care</button>
+                <button class="filter-btn" data-filter="skin">Skin Care</button>
+                <button class="filter-btn" data-filter="cosmetics">Cosmetics</button>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-cut"></i>
+                    <h3>Hair Styling</h3>
+                    <p>Professional hair styling services by expert stylists.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Spa Treatments</h3>
+                    <p>Relaxing spa treatments for ultimate rejuvenation.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Makeup Services</h3>
+                    <p>Professional makeup application for any occasion.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hands"></i>
+                    <h3>Nail Care</h3>
+                    <p>Complete nail care services including manicures and pedicures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://placehold.co/600x400/e8d3e8/333?text=Our+Boutique" alt="Glamor Hair Boutique">
+                </div>
+                <div class="about-text">
+                    <h2>About Glamor Hair Boutique</h2>
+                    <p>Founded in 2010, Glamor Hair Boutique has been providing premium hair care, personal care, and cosmetic products to our valued customers. We believe in quality, sustainability, and beauty that enhances your natural features.</p>
+                    <p>Our team of experts carefully selects each product in our collection to ensure you receive only the best. We pride ourselves on offering personalized service and expert advice to help you find the perfect products for your unique needs.</p>
+                    <a href="#contact" class="btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"The products at Glamor Hair Boutique transformed my hair care routine. My hair has never looked better!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://placehold.co/100x100/d3e8e8/333?text=S" alt="Sarah Johnson">
+                            <h4>Sarah Johnson</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I love the personalized service and expert advice. The staff really knows their products and helped me find exactly what I needed."</p>
+                        <div class="testimonial-author">
+                            <img src="https://placehold.co/100x100/e8d3d3/333?text=M" alt="Michael Chen">
+                            <h4>Michael Chen</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The spa treatments are absolutely divine! I leave feeling refreshed and rejuvenated every time."</p>
+                        <div class="testimonial-author">
+                            <img src="https://placehold.co/100x100/d3d3e8/333?text=E" alt="Emma Rodriguez">
+                            <h4>Emma Rodriguez</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Beauty Lane, Fashion District<br>New York, NY 10001</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@glamorhaiboutique.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon-Sat: 10am - 8pm<br>Sunday: 12pm - 6pm</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="cart-total">$0.00</span></h3>
+            </div>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Glamor Hair Boutique</h2>
+                    <p>Elevating beauty since 2010</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Glamor Hair Boutique. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
